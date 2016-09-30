@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -44,6 +44,11 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FL2-1I-Ceg">
                                                         <state key="normal" title="Finn"/>
+                                                        <connections>
+                                                            <action selector="battleMe:" destination="BYZ-38-t0r" eventType="touchDownRepeat" id="ADF-4L-gpG"/>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGj-t9-aMR"/>
+                                                            <action selector="viewChangerYay:" destination="BYZ-38-t0r" eventType="touchDown" id="QYE-1p-kmn"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -51,6 +56,11 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUs-2Y-iws">
                                                         <state key="normal" title="Jake"/>
+                                                        <connections>
+                                                            <action selector="battleMe:" destination="BYZ-38-t0r" eventType="touchDownRepeat" id="aU9-mt-CO6"/>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZ7-0r-Im0"/>
+                                                            <action selector="viewChangerYay:" destination="BYZ-38-t0r" eventType="touchDown" id="YEl-WX-k15"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -58,6 +68,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZp-PV-Wqr">
                                                         <state key="normal" title="Bubblegum"/>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q1h-0M-BEN"/>
+                                                            <action selector="viewChangerYay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UhV-FU-Ypg"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -69,6 +83,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfq-HG-vtZ">
                                                         <state key="normal" title="BMO"/>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4T-tP-TBl"/>
+                                                            <action selector="viewChangerYay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iso-VS-ngY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -76,6 +94,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTd-ua-jsJ">
                                                         <state key="normal" title="Lemongrab"/>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlB-tj-aRA"/>
+                                                            <action selector="viewChangerYay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lf2-Dg-edm"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -83,6 +105,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1m-QI-yUk">
                                                         <state key="normal" title="LSP"/>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRz-II-xfo"/>
+                                                            <action selector="viewChangerYay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tst-74-g0E"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -110,6 +136,12 @@
                             <constraint firstItem="UQf-DI-ejY" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="whb-qz-ZhM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterImageView" destination="Gkg-PK-yKt" id="NP2-tk-iKA"/>
+                        <outlet property="nameLabel" destination="Awl-EZ-K7E" id="wV5-3T-xEF"/>
+                        <outlet property="occupationLabel" destination="S5L-jQ-mRD" id="8b0-6e-UCa"/>
+                        <outlet property="speciesLabel" destination="Egf-mO-6Im" id="kXN-7R-Asq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
